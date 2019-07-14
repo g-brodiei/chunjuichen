@@ -1,72 +1,243 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        chunjuichen
-      </h1>
-      <h2 class="subtitle">
-        Welcome to my world.
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <section id="intro" class="container-fluid" aria-label="introduction">
+      <div class="row full-screen-height">
+        <div class="col message-zh">
+          <div class="zh-name" aria-labelledby="ZH-name">
+            <p data-aos="fadeInDown">陳</p>
+            <p data-aos="fadeInDown">君</p>
+            <p data-aos="fadeInDown">瑞</p>
+          </div>
+          <p class="zh-des pt-2" data-aos="fadeInRight" aria-labelledby="ZH-description">你好，<br>我是一名網頁工程師。</p>
+        </div>
+        <div class="col message-en">
+          <h1 class="ml-sm-5 ml-3 title" aria-labelledby="EN-name">
+            <span data-aos="fadeInUp">Hi,</span>
+            <br class="d-block d-sm-none">
+            <span data-aos="fadeInUp">I'm Michael Chen</span>
+          </h1>
+          <p class="ml-sm-5 ml-3 subtitle" data-aos="fadeInUp" aria-labelledby="EN-description">A Web developer | Drupal Site Builder</p>
+        </div>
+        <DownArrow />
       </div>
-    </div>
+    </section>
+    <section class="container-fluid" aria-label="portfolio">
+      <div class="row full-screen-height portfolio-sector">
+        <h2 class="col-12 portfolio-title text-center"  data-aos="fadeIn">Porfolio</h2>
+        <p class="col-12 sec-bus">
+          Business Side
+          <span class="decor-angle-1" data-aos="increase-right"></span>
+        </p>
+        <p class="col-12 sec-it">
+          <span class=""></span>
+          Information<br>
+          System Technology
+          <span class=""></span>
+        </p>
+        <p class="col-12 sec-dev">
+          <span class="decor-angle-2"></span>
+          Development Side
+        </p>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
+import DownArrow from '~/components/DownArrowIndicator'
 export default {
   components: {
-    Logo
+    DownArrow
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="scss">
+// Portfolio sector
+.portfolio-sector {
+  .portfolio-title{
+    height: 20px;
+  }
+
+  .sec-bus {
+    font-size:1.5rem;
+  }
+
+  .sec-it {
+    font-size: 1.5rem;
+    text-align: center;
+    align-self: center;
+  }
+
+  .sec-dev {
+    font-size: 1.5rem;
+    text-align: right;
+    align-self: flex-end; 
+  }
+
+  .decor-angle-1 {
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    // height: 0vh;
+    // width: 0vw;
+    top: 0;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    -moz-transform: skew(-45deg);
+    -webkit-transfrom: skew(-45deg);
+    transform: skew(-45deg);
+    // -webkit-animation: increase 3s;
+    // -moz-animation: increase 3s;
+    // -o-animation: increase 3s;
+    // animation: increase 3s;
+    // animation-fill-mode: forwards;
+
+  }
+  
+  .decor-angle-2 {
+    position: absolute;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    height:28vh;
+    width: 10vw;
+    bottom: 0%;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    -moz-transform: skew(-45deg);
+    -webkit-transfrom: skew(-45deg);
+    transform: skew(-45deg);
+  }
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+[data-aos="increase-right"] {
+  transition-property: animation;
+  width: 0vw;
+  height: 0vh;
+
+  &.aos-animate {
+    animation: increase 3s;
+    animation-fill-mode: forwards;
+  }
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+@keyframes increase {
+  // load to left
+  0% {
+    width: 0vw;
+    height: 0vh;
+  }
+  40% {
+    width: 10vw;
+    height: 0vh;
+  }
+
+  100% {
+    width: 10vw;
+    height: 28vh;
+  }
 }
 
-.links {
-  padding-top: 15px;
+// Full screen settings
+.full-screen-height {
+  height: calc(100vh);
+  position: relative;
 }
+
+// Introduction message
+.message-en {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 20%;
+    padding-left:5%;
+  
+  .title {
+    :first-child {
+      animation-delay: 200ms;
+      animation-duration: 2000ms;
+    }
+    :last-child {
+      animation-delay: 300ms;
+      animation-duration: 2000ms;
+    }
+  }
+
+  .subtitle {
+    animation-delay: 400ms;
+    animation-duration: 2000ms;
+    font-size: 1.2rem;
+  }
+}
+
+.message-zh {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 25%;
+    padding-right: 25%;
+
+  p {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 2.5rem;
+  }
+
+  .zh-name {
+    :nth-child(1){
+      animation-delay: 200ms;
+      animation-duration: 2000ms;
+    }
+    :nth-child(2){
+      animation-delay: 300ms;
+      animation-duration: 2000ms;
+    }
+    :nth-child(3){
+      animation-delay: 400ms;
+      animation-duration: 2000ms;
+    }
+  }
+  .zh-des {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 10%;
+    font-size: 1.2rem;
+    animation-delay: 200ms;
+    animation-duration: 1500ms;
+    margin-bottom: -50px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .message-en {
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .message-zh {
+    p {
+      font-size: 3rem;
+    }
+    
+    .zh-des {
+      right: 18%;
+    }
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .message-en {
+    bottom: 15%;
+  }
+}
+
 </style>

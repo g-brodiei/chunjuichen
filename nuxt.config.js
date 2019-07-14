@@ -23,18 +23,25 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/open-iconic/font/css/open-iconic-bootstrap.min.css',
+    '@/assets/animate.css/animate.css',
+    '@/assets/scss/index.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {
+      src: "~/plugins/aos",
+      ssr: false
+    }
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt',
+    'bootstrap-vue/nuxt'
   ],
   /*
   ** Build configuration
