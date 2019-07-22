@@ -8,7 +8,7 @@
             <p data-aos="fadeInDown">君</p>
             <p data-aos="fadeInDown">瑞</p>
           </div>
-          <p class="zh-des pt-2" data-aos="fadeInRight" aria-labelledby="ZH-description">你好，<br>我是一名網頁工程師。</p>
+          <p class="zh-des pt-2" data-aos="fadeInRight" aria-labelledby="ZH-description">你好，<br>我是一名網頁工程師<br>及商業分析師</p>
         </div>
         <div class="col message-en">
           <h1 class="ml-sm-5 ml-3 title" aria-labelledby="EN-name">
@@ -16,7 +16,7 @@
             <br class="d-block d-sm-none">
             <span data-aos="fadeInUp">I'm Michael Chen</span>
           </h1>
-          <p class="ml-sm-5 ml-3 subtitle" data-aos="fadeInUp" aria-labelledby="EN-description">A Web developer | Drupal Site Builder</p>
+          <p class="ml-sm-5 ml-3 subtitle" data-aos="fadeInUp" aria-labelledby="EN-description">A Web developer | Business Analyst</p>
         </div>
         <DownArrow />
       </div>
@@ -24,17 +24,18 @@
     <section class="container-fluid" aria-label="portfolio">
       <div class="row full-screen-height portfolio-sector">
         <h2 class="col-12 portfolio-title text-center"  data-aos="fadeIn">Porfolio</h2>
-        <p class="col-12 sec-bus">
+        <p class="col-12 sec-bus" data-aos="fadeInLeft" data-aos-delay="200">
           Business Side
-          <span class="decor-angle-1" data-aos="increase-right"></span>
+          <span class="decor-angle-1"></span>
         </p>
         <p class="col-12 sec-it">
           <span class=""></span>
-          Information<br>
+          <nuxt-link to="about"> Information<br>
           System Technology
+          </nuxt-link>
           <span class=""></span>
         </p>
-        <p class="col-12 sec-dev">
+        <p class="col-12 sec-dev" data-aos="fadeInRight" data-aos-anchor=".sec-it" data-aos-delay="200">
           <span class="decor-angle-2"></span>
           Development Side
         </p>
@@ -79,8 +80,8 @@ export default {
     position: absolute;
     margin-left: 1rem;
     margin-top: 1.5rem;
-    // height: 0vh;
-    // width: 0vw;
+    height: 28vh;
+    width: 10vw;
     top: 0;
     border-top: 3px solid black;
     border-right: 3px solid black;
@@ -107,34 +108,6 @@ export default {
     -moz-transform: skew(-45deg);
     -webkit-transfrom: skew(-45deg);
     transform: skew(-45deg);
-  }
-}
-
-[data-aos="increase-right"] {
-  transition-property: animation;
-  width: 0vw;
-  height: 0vh;
-
-  &.aos-animate {
-    animation: increase 3s;
-    animation-fill-mode: forwards;
-  }
-}
-
-@keyframes increase {
-  // load to left
-  0% {
-    width: 0vw;
-    height: 0vh;
-  }
-  40% {
-    width: 10vw;
-    height: 0vh;
-  }
-
-  100% {
-    width: 10vw;
-    height: 28vh;
   }
 }
 
@@ -177,7 +150,7 @@ export default {
     align-items: flex-end;
     position: absolute;
     top: 25%;
-    padding-right: 25%;
+    padding-right: 32%;
 
   p {
     writing-mode: vertical-lr;
