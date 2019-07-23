@@ -9,7 +9,7 @@
 
 #hint-arrow {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 50%;
 }
 
