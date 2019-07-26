@@ -18,7 +18,10 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: {
+    color: '#2b2b2b',
+    height: '4px'
+  },
   /*
   ** Global CSS
   */
@@ -31,6 +34,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '@/plugins/anime.js',
     {
       src: "~/plugins/aos",
       ssr: false
