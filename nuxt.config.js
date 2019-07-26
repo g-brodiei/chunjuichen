@@ -48,6 +48,10 @@ export default {
     'bootstrap-vue/nuxt'
   ],
   /*
+  ** Redirect SSL
+  */
+  serverMiddleware: ["redirect-ssl"],
+  /*
   ** Build configuration
   */
   build: {
