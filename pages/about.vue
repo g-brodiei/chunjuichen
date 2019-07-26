@@ -1,17 +1,20 @@
 <template>
   <div>
-    <section class="container-fluid" aria-label="about">
-      <div class="row full-screen-height">
+    <section id="about" class="container-fluid" aria-label="about">
+      <div class="row">
         <h1 class="col-12">About Me</h1>
         <div class="col-12">
           <img src="" alt="">
-          <p class="self-intro">Hi, I'm Michael (Chun-Jui, Chen), from Taiwan. a passionate learner in web development which started from Drupal since 2013, freshly graduated from RMIT in Master degree of Business of IT since 2019. I constantly seek pratical solutions for my clients by filling in the knowledge gaps between their business requirements and actual visionary of technology implimentation, instead of proposing a vague cumbersome solution, a pratical applicable solution that fits the current limits and cost provides a better aim.</p>
+          <p class="self-intro">Hi, I'm Michael (Chun-Jui, Chen), from Taiwan. a passionate learner in web development which started from Drupal since 2013, freshly graduated from RMIT in Master degree of Business of IT since 2019.</p>
         </div>
+      </div>
+    </section>
+    <section id="timeline" class="container-fluid">
         <div class="col-12">
-          <h3>Timeline</h3>
+          <h2>Timeline</h2>
           <TimeLine />
         </div>
-        <h3 class="col-12">Skill Sets</h3>
+        <h2 class="col-12">Skill Sets</h2>
         <div class="col-5">
           <h3>Business Side</h3>
           <ul>
@@ -33,8 +36,7 @@
             <li>VueJS</li>
             <li>Version Control</li>
           </ul>
-        </div>
-      </div>
+        </div>     
     </section>
   </div>
 </template>
@@ -43,7 +45,7 @@ import TimeLine from "~/components/TimeLine";
 
 export default {
   components: {
-    TimeLine,
+    TimeLine
   }
 }
 </script>

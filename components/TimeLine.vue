@@ -20,7 +20,7 @@ export default {
     return {
       histories: [
         {
-          title: "Master of Business of IT, RMIT",
+          title: "Master Business of IT, RMIT",
           daterange: "2017-2019",
           location: "Melbourne, AU",
           description: "Given the past web development experience from TFRI which arised my interest in IT industry, I had chosen to travel abroad to fill-in the gaps of my breif knowledge. Two years of intense study has broaden my perspective and gained the skill sets needed for in terms of proper methodlogy and theroies with projects in practice at RMIT.",
