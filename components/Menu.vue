@@ -9,8 +9,7 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
         <b-nav-item href="about">About</b-nav-item>
-        <b-nav-item>Service</b-nav-item>
-        <b-nav-item>Portfolio</b-nav-item>
+        <b-nav-item href="portfolio">Portfolio</b-nav-item>
         <b-nav-item>Contact</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
