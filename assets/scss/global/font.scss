@@ -1,11 +1,11 @@
 /*font-size*/
-@import url('https://fonts.googleapis.com/css?family=Roboto|Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Noto+Sans+TC&display=swap');
 
 $kf-turquoise: #269e93;
 $kf-darkgreen: #2f846b;
 
 html {
-  font-family: 'Merienda One', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Roboto', "Noto Sans TC",Arial, sans-serif-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merienda One', cursive;
+  font-family: 'Roboto', "Noto Sans TC", Arial, sans-serif;
 }
 
 a {
