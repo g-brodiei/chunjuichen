@@ -1,6 +1,17 @@
 <template>
-  <div id="hint-arrow" class="infiniteFadeIn">
-    <span class="oi oi-arrow-thick-bottom"></span>
+  <div id="hint-arrow" class="row">
+    <div class="col">
+      <a class="button-wrapper" href="/about">
+        <span class="oi oi-arrow-thick-left infiniteFadeIn arrow-left"></span>
+        <p>About</p>
+      </a>
+    </div>
+    <div class="col flex-right">
+      <a class="button-wrapper" href="portfolio">
+        <p>Works</p>
+        <span class="oi oi-arrow-thick-right infiniteFadeIn arrow-right"></span>
+      </a>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -9,8 +20,24 @@
 
 #hint-arrow {
   position: absolute;
-  bottom: 15%;
-  left: 50%;
+  margin: auto;
+  width: 250px;
+  bottom: 10%;
+  left: calc(50% - 125px);
+}
+
+.button-wrapper {
+  display:inline-flex;
+
+  p {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+}
+
+.flex-right {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 @keyframes flicker {
@@ -40,5 +67,6 @@
   -o-animation: flicker 1.5s infinite;
   animation: flicker 1.5s infinite;
 }
+
 </style>
 
