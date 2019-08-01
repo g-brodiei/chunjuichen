@@ -1,7 +1,7 @@
 <template>
-  <b-navbar id="navbar" type="light" toggleable="lg">
+  <b-navbar id="navbar" class="col-md-10 offset-md-1" type="light" toggleable="lg">
     <b-navbar-brand href="/">
-      CJ Chen
+      <img src="/favicon-32x32.png" alt="cjchen">
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
