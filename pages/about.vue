@@ -193,7 +193,7 @@ export default {
       background: {
         repeat: no-repeat;
         position: center;
-        attachment: fixed;
+        attachment: scroll;
         size: cover;
       }
     }
@@ -218,6 +218,14 @@ export default {
       align-items: center;
     }
   }  
+
+  .fixed-background {
+    &::before{
+      background: {
+        attachment: fixed;
+      }
+    }
+  }
 </style>
 
 
