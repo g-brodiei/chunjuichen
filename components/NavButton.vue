@@ -22,7 +22,7 @@
   position: absolute;
   margin: auto;
   width: 250px;
-  bottom: 10%;
+  bottom: 8%;
   left: calc(50% - 125px);
 }
 

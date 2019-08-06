@@ -64,16 +64,20 @@ export default {
 .full-screen-height {
   height: calc(100vh - 96px);
   position: relative;
+  top: 96px;
 }
 
 // Introduction message
 #intro {
   
   .message-en {
-    margin-top: 100px;
     opacity: 0;
-    & p {
+    p {
       font-family: 'Roboto';
+    }
+
+    h1 {
+      font-size: 1.8rem;
     }
 
     .subtitle {
@@ -83,14 +87,12 @@ export default {
 
   .message-zh {
     font-family: "Noto Sans TC";
-    margin-top: 50px;
-
 
     p {
       font-family: "Noto Sans TC";
       writing-mode: vertical-lr;
       text-orientation: upright;
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
 
     .zh-name {
@@ -155,13 +157,4 @@ export default {
     }
   }
 }
-
-@media screen and (max-height: 568px) {
-  #intro{
-    .message-en {
-      
-    }
-  }
-}
-
 </style>

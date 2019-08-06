@@ -193,7 +193,7 @@ export default {
       background: {
         repeat: no-repeat;
         position: center;
-        attachment: fixed;
+        attachment: scroll;
         size: cover;
       }
     }
