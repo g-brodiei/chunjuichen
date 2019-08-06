@@ -1,5 +1,5 @@
 <template>
-  <b-navbar id="navbar" class="col-md-10 offset-md-1" type="light" toggleable="lg">
+  <b-navbar id="navbar" class="col-md-10 offset-md-1 fixed-top" type="light" toggleable="lg">
     <b-navbar-brand href="/">
       <img src="/favicon-32x32.png" alt="cjchen">
     </b-navbar-brand>
@@ -18,20 +18,20 @@
 <script>
 export default {
   methods: {
-    handleScroll () {
-      // any code to handle scroll event
-      let nav = document.getElementById('navbar');
-      if (window.scrollY !== 0) {
-        nav.classList.add('fixed-top');
-        nav.classList.remove('sticky-top');
-      } else {
-        nav.classList.add('sticky-top');
-        nav.classList.remove('fixed-top');
-      }
-    }
+    // handleScroll () {
+    //   // any code to handle scroll event
+    //   let nav = document.getElementById('navbar');
+    //   if (window.scrollY !== 0) {
+    //     nav.classList.add('fixed-top');
+    //     nav.classList.remove('sticky-top');
+    //   } else {
+    //     nav.classList.add('sticky-top');
+    //     nav.classList.remove('fixed-top');
+    //   }
+    // }
   },
   mounted () {
-    window.addEventListener('scroll', this.handleScroll);
+    // window.addEventListener('scroll', this.handleScroll);
   }
 }
 </script>

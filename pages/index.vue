@@ -9,9 +9,9 @@
             <p class="zh-des" aria-labelledby="ZH-description">一名網頁工程師</p>
           </div>
         </div>
-        <div class="col-12 col-md-4 offset-md-2 message-en">
+        <div class="col-12 col-md-10 offset-md-2 message-en">
           <h1 class="ml-sm-5 ml-3 title" aria-labelledby="EN-name">
-            I'm Chun-Jui Chen
+            I'm Michael Chen
           </h1>
           <p class="ml-sm-5 ml-3 subtitle" aria-labelledby="EN-description">A Web developer</p>
         </div>
