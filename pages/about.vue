@@ -217,7 +217,7 @@ export default {
     .self-intro {
       align-items: center;
     }
-  }  
+  }
 </style>
 
 
