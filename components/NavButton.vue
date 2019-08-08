@@ -1,16 +1,18 @@
 <template>
-  <div id="hint-arrow" class="row">
-    <div class="col">
-      <a class="button-wrapper" href="/about">
-        <span class="oi oi-arrow-thick-left infiniteFadeIn arrow-left"></span>
-        <p>About</p>
-      </a>
-    </div>
-    <div class="col flex-right">
-      <a class="button-wrapper" href="portfolio">
-        <p>Works</p>
-        <span class="oi oi-arrow-thick-right infiniteFadeIn arrow-right"></span>
-      </a>
+  <div id="hint-arrow" class="col">
+    <div class="row">
+      <div class="col">
+        <a class="button-wrapper" href="/about">
+          <span class="oi oi-arrow-thick-left infiniteFadeIn arrow-left"></span>
+          <p>About</p>
+        </a>
+      </div>
+      <div class="col flex-right">
+        <a class="button-wrapper" href="portfolio">
+          <p>Works</p>
+          <span class="oi oi-arrow-thick-right infiniteFadeIn arrow-right"></span>
+        </a>
+      </div>
     </div>
   </div>
 </template>

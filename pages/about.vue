@@ -217,17 +217,6 @@ export default {
     .self-intro {
       align-items: center;
     }
-<<<<<<< HEAD
-=======
-  }  
-
-  .fixed-background {
-    &::before{
-      background: {
-        attachment: fixed;
-      }
-    }
->>>>>>> 92fe192c51fbe30dee3e13b05d26ae9799e49d9a
   }
 </style>
 

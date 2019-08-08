@@ -11,7 +11,7 @@
         </div>
         <div class="col-12 col-md-10 offset-md-2 message-en">
           <h1 class="ml-sm-5 ml-3 title" aria-labelledby="EN-name">
-            I'm Michael Chen
+            I am Michael Chen
           </h1>
           <p class="ml-sm-5 ml-3 subtitle" aria-labelledby="EN-description">A Web developer</p>
         </div>
