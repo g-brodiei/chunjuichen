@@ -113,7 +113,7 @@ export default {
         position: relative;
         border-radius: 3%;
         border: 1px solid lightgoldenrodyellow;
-        background: lightgoldenrodyellow;
+        background: rgba(250, 250, 210, 0.6588235294117647);
         box-shadow: lightgray 2px 2px 5px;
         padding: 10px;
         margin: {

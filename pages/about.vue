@@ -9,7 +9,7 @@
       <div class="title-wrapper">
         <HeadLine title="About Me" />
       </div>
-      <div class="col-12 col-md-6 mr-md-auto p-5 self-intro">
+      <div class="col-12 col-md-6 mr-md-auto py-3 p-md-5 self-intro">
         <p>Hi, I'm <strong>Michael Chen.</strong> A <strong><i>Web Developer &#38; Business Analyst</i></strong> based in Melbourne.</p>
         <p>I like to research and solve business problems together with my clients and collegues, curating solutions that complies within requirements and beyond expectations.</p>
         <p>Currently I provide solutions that aligns with client's business strategies within proposed system design; Create system workflows, maintenance and security updates utilizing Drupal framework.</p>
@@ -27,7 +27,7 @@
       <div class="title-wrapper">
         <HeadLine title="Skill Sets" />
       </div>
-      <div class="skill-wrapper col-12 col-md-10">
+      <div class="skill-wrapper col-12 col-md-10 py-2 py-md-5">
         <div class="row">
           <div class="col-12 col-md-5 offset-md-1">
             <h3>Business</h3>
@@ -69,33 +69,6 @@
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </div>
-    <div id="mansory">
-      <div class="mansory-wrapper">
-        <div class="mansory-col">
-          <b-img-lazy :src="source"></b-img-lazy>
-          <img src="/about_pic/bear_fir.jpg" alt="">
-          <img src="/about_pic/caterpillar.jpg" alt="">
-          <img src="/about_pic/cicada_skin.jpg" alt="">
-          <img src="" alt="">
-        </div>
-        <div class="mansory-col">
-          <img src="/about_pic/dusk_light.jpg" alt="">
-          <img src="/about_pic/forest_glamour_light.jpg" alt="">
-          <img src="/about_pic/nengao_ridgeline.jpg" alt="">
-        </div>
-        <div class="mansory-col">
-          <img src="/about_pic/nengao_pine.jpg" alt="">
-          <img src="/about_pic/plain_grass.jpg" alt="">
-          <img src="/about_pic/revolute_cupule_oak.jpg" alt="">
-          <img src="/about_pic/river.jpg" alt="">
-        </div>
-        <div class="mansory-col">
-          <img src="/about_pic/city_river.jpg" alt="">
-          <img src="/about_pic/memorial_monument.jpg" alt="">
-          <img src="/about_pic/mist_forest.jpg" alt="">
         </div>
       </div>
     </div>
@@ -145,29 +118,12 @@ export default {
       }
     }
   }
-  #mansory {
-    .mansory-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0 2px;
-      
-      .mansory-col {
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 2px;
-
-        img {
-          margin-top: 4px;
-          vertical-align: middle;
-          width: 100%;
-        }
-      }
-    }
-  }
 
   .title-wrapper {
     width: 100%;
     overflow: hidden;
+    position: absolute;
+    top: 10vh;
     padding: {
       top: 0.3rem;
       bottom: 0.3rem;

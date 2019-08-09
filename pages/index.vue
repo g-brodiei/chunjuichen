@@ -62,7 +62,7 @@ export default {
 <style lang="scss">
 // Full screen settings
 .full-screen-height {
-  height: calc(100vh - 96px);
+  height: calc(95vh - 96px);
   position: relative;
   top: 96px;
 }

@@ -16,17 +16,20 @@
         <div class="nav-header"><span>Climbing is Pure Passion!!</span></div>
         <ul class="nav-items">
           <li class="nav-item">
-            <a href="/" class="nav-link">Home</a>
+            <nuxt-link to="/" class="nav-link">Home</nuxt-link>
           </li>
           <li class="nav-item">
-            <a href="/about" class="nav-link">About</a>
+            <nuxt-link to="/about" class="nav-link">About</nuxt-link>
           </li>
           <li class="nav-item">
-            <a href="/portfolio" class="nav-link">Portfolio</a>
+            <nuxt-link to="/portfolio" class="nav-link">Portfolio</nuxt-link>
           </li>
           <li class="nav-item">
-            <a href="/contact" class="nav-link">Contact</a>
+            <nuxt-link to="/gallery" class="nav-link">Gallery</nuxt-link>
           </li>
+          <!-- <li class="nav-item">
+            <nuxt-link to="/contact" class="nav-link">Contact</nuxt-link>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -51,9 +54,16 @@ export default {
     //     nav.classList.remove('fixed-top');
     //   }
     // }
+    clickShut: function () {
+      let links = document.querySelectorAll('.nav-link');
 
+      links.forEach((link)=>{
+        link.addEventListener('click', ()=>{
+          this.menuHide();
+        })
+      });
+    },
     menuToggle: function () {
-      console.log(this.viewPoint);
       !this.viewPoint ? this.menuShow() : this.menuHide();
     },
     toggleState: function(){
@@ -104,6 +114,7 @@ export default {
   },
   mounted () {
     // window.addEventListener('scroll', this.handleScroll);
+    this.clickShut();
   }
 }
 </script>
@@ -169,7 +180,7 @@ export default {
       list-style: none;
       padding: 20px 0 30px;
       .nav-item {
-        a {
+        .nav-link {
           color: inherit;
         }
       }
