@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body-wrapper">
     <header>
       <Menu />
     </header>
@@ -39,5 +39,10 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.body-wrapper {
+  padding-bottom: 100px;
+  position: relative;
 }
 </style>

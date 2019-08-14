@@ -22,11 +22,11 @@
             <nuxt-link to="/about" class="nav-link">About</nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/portfolio" class="nav-link">Portfolio</nuxt-link>
+            <nuxt-link to="/works" class="nav-link">Works</nuxt-link>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <nuxt-link to="/gallery" class="nav-link">Gallery</nuxt-link>
-          </li>
+          </li> -->
           <!-- <li class="nav-item">
             <nuxt-link to="/contact" class="nav-link">Contact</nuxt-link>
           </li> -->
@@ -54,6 +54,13 @@ export default {
     //     nav.classList.remove('fixed-top');
     //   }
     // }
+    escShut: function () {
+      document.addEventListener("keydown", (e)=>{
+        if(e.keyCode === 27 && this.viewPoint === true) {
+          this.menuHide();
+        }
+      });
+    },
     clickShut: function () {
       let links = document.querySelectorAll('.nav-link');
 
@@ -115,6 +122,7 @@ export default {
   mounted () {
     // window.addEventListener('scroll', this.handleScroll);
     this.clickShut();
+    this.escShut();
   }
 }
 </script>
@@ -175,11 +183,13 @@ export default {
 
     .nav-header {
       text-align: center;
+      font-size: 1.3rem;
     }
     .nav-items {
       list-style: none;
       padding: 20px 0 30px;
       .nav-item {
+        font-size: 1.5rem;
         .nav-link {
           color: inherit;
         }

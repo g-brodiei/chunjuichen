@@ -12,7 +12,7 @@
       <div class="col-12 col-md-6 mr-md-auto py-3 p-md-5 self-intro">
         <p>Hi, I'm <strong>Michael Chen.</strong> A <strong><i>Web Developer &#38; Business Analyst</i></strong> based in Melbourne.</p>
         <p>I like to research and solve business problems together with my clients and collegues, curating solutions that complies within requirements and beyond expectations.</p>
-        <p>Currently I provide solutions that aligns with client's business strategies within proposed system design; Create system workflows, maintenance and security updates utilizing Drupal framework.</p>
+        <p>Currently I provide solutions that aligns with client's business strategies within proposed system design; Create system workflows, maintenance and security updates utilizing the Drupal framework.</p>
       </div>
     </div>
     <div id="timeline" class="row fixed-background img-2">
@@ -76,7 +76,6 @@
 </template>
 <script>
 import TimeLine from "~/components/TimeLine";
-// import { delay } from 'q';
 import HeadLine from "~/components/TitleEffect";
 export default {
   components: {
@@ -122,8 +121,7 @@ export default {
   .title-wrapper {
     width: 100%;
     overflow: hidden;
-    position: absolute;
-    top: 10vh;
+    position: relative;
     padding: {
       top: 0.3rem;
       bottom: 0.3rem;

@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <section id="intro" class="container-fluid" aria-label="introduction">
+  <div class="container-fluid">
+    <section id="intro" aria-label="introduction">
       <div class="row full-screen-height">
         <div class="col-12 col-md-8 offset-md-2 message-zh">
-          <div class="head-img ml-3"><img src="/images/kingfisher.jpg" alt=""></div>
+          <div class="head-img ml-3"><img src="/images/selfie_dog.jpg" alt=""></div>
           <div class="zh-name" aria-labelledby="ZH-name">
             <p class="zh-punch">我叫陳君瑞</p>
             <p class="zh-des" aria-labelledby="ZH-description">一名網頁工程師</p>
@@ -15,19 +15,13 @@
           </h1>
           <p class="ml-sm-5 ml-3 subtitle" aria-labelledby="EN-description">A Web developer</p>
         </div>
-      <NavButton />
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import NavButton from '~/components/NavButton'
-
 export default {
-  components: {
-    NavButton
-  },
   mounted() {
     this.$anime
       .timeline()
@@ -119,7 +113,8 @@ export default {
       img {
         position: absolute;
         height: 100%;
-        margin-left: -41px;
+        transform: scale(1.2);
+        margin-left: 5px;
       }
     }
   }

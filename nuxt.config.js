@@ -20,6 +20,9 @@ export default {
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'favicon-16x16.png'},
       { rel: 'manifest', href: '/site.webmanifest'},
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5'}
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/2751eccbc1.js' }
     ]
   },
   /*

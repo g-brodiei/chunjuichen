@@ -2,16 +2,16 @@
   <div id="hint-arrow" class="col">
     <div class="row">
       <div class="col">
-        <a class="button-wrapper" href="/about">
+        <nuxt-link class="button-wrapper" to="/about">
           <span class="oi oi-arrow-thick-left infiniteFadeIn arrow-left"></span>
           <p>About</p>
-        </a>
+        </nuxt-link>
       </div>
       <div class="col flex-right">
-        <a class="button-wrapper" href="portfolio">
+        <nuxt-link class="button-wrapper" to="/works">
           <p>Works</p>
           <span class="oi oi-arrow-thick-right infiniteFadeIn arrow-right"></span>
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </div>
