@@ -9,7 +9,7 @@
           <div class="col-12 col-md-5 img-wrapper">
             <div class="work-img">
               <nuxt-link :to="work.links">
-                <img class="img-fluid" :src="work.imgSource" :alt="work.title">
+                <b-img-lazy v-bind="imgProps" class="img-fluid" :src="work.imgSource" :alt="work.title"></b-img-lazy>
               </nuxt-link>
             </div>
           </div>
@@ -32,6 +32,11 @@
 export default {
   data () {
     return {
+      imgProps: {
+        fluidGrow: true,
+        blank: true,
+        blankColor: '#bbb'
+      },
       works: [
         {
           links: '/works/tupclimbing',
