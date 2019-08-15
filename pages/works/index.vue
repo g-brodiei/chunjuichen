@@ -35,7 +35,9 @@ export default {
       imgProps: {
         fluidGrow: true,
         blank: true,
-        blankColor: '#bbb'
+        blankColor: '#bbb',
+        blankWidth: 370,
+        blankHeight: 200
       },
       works: [
         {
