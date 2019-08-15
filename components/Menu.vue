@@ -137,8 +137,8 @@ export default {
 
 .menu {
   position:absolute;
-  top: 2.7vmin;
-  right: 2.8vmin;
+  top: 2.8vmin;
+  right: 3.3vmin;
   z-index: 1003;
   width: 23px;
   outline: none;
@@ -148,7 +148,7 @@ export default {
     display: block;
     height: 2px;
     width: 100%;
-    background-color: #a5acbc;
+    background-color: #269e93;
     margin-bottom: 4px;
     border-radius: 2px;
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),opacity 0.2s ease-out;
@@ -156,7 +156,7 @@ export default {
 
   &:hover .menu-hamburger {
     transform: scaleX(1.2);
-    background-color: #8591ac;
+    background-color: #2fc2b6;
   }
 }
 
