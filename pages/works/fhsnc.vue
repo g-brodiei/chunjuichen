@@ -1,5 +1,5 @@
 <template>
-  <section class="contianer-fluid">
+  <section class="container-fluid">
     <h1 class="text-center my-5">Forest Disease Information Center</h1>
     <div class="row">
       <div class="col-12 col-md-8 offset-md-2 case-display">
