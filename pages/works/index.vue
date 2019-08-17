@@ -70,7 +70,7 @@ export default {
               title: 'Drupal 7, Drupal is a free and open-source content management framework written in PHP and distributed under the GNU General Public License'
             }
           ],
-          description: 'i-Tree TW is a public project serve by Taiwan Forestry Research Institute to provide Chinese manual of <a href="https://www.itreetools.org">i-Tree tools</a> while presentign site study information utilizing it.'
+          description: 'i-Tree TW is a public project serve by Taiwan Forestry Research Institute to provide Chinese manual of <a href="https://www.itreetools.org">i-Tree tools</a> while presenting data information utilizing it.'
         },
         {
           links: '/works/fhsnc',
