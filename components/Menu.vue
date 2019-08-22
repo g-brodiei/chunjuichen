@@ -16,13 +16,13 @@
         <div class="nav-header"><span>Climbing is Pure Passion!!</span></div>
         <ul class="nav-items">
           <li class="nav-item">
-            <nuxt-link to="/" class="nav-link">Home</nuxt-link>
+            <nuxt-link to="/" exact class="nav-link">Home</nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/about" class="nav-link">About</nuxt-link>
+            <nuxt-link to="/about" exact class="nav-link">About</nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/works" class="nav-link">Works</nuxt-link>
+            <nuxt-link to="/works" exact class="nav-link">Works</nuxt-link>
           </li>
           <!-- <li class="nav-item">
             <nuxt-link to="/gallery" class="nav-link">Gallery</nuxt-link>
@@ -95,7 +95,23 @@ export default {
         targets: ".nav-overlay",
         opacity: [0,1],
         easing: "easeInOutExpo",
-        duration: 100
+        duration: 200
+      })
+      .add({
+        targets: ".nav-header",
+        opacity: [0,1],
+        scale: [0.8,1],
+        translateY: ["7px", 0],
+        easing: "easeOutExpo",
+        duration: 500
+      })
+      .add({
+        targets: ".nav-item",
+        scale: [0.9,1],
+        opacity: [0,1],
+        translateY: ["-7px", 0],
+        delay: (el, i) => { return 100 + 150 * (i+1) },
+        easing: "easeOutExpo"
       })
     },
     menuHide: function () {
@@ -107,15 +123,27 @@ export default {
       .add ({
         targets: ".nav-overlay",
         opacity: [1,0],
-        easing: "easeInOutExpo",
-        duration: 100
+        easing: "easeInExpo",
+        duration: 300
       })
       .add({
         targets: ".menu-animated-background",
         scale: [3,0.3],
         opacity: [1,0],
         easing: "easeInCubic",
-        duration: 300
+        duration: 150
+      })
+      .add({
+        targets: ".nav-header",
+        opacity: [1,0.8],
+        duration: 200,
+        easing: "easeInExpo"
+      })
+      .add({
+        targets: ".nav-item",
+        opacity: [1,0.8],
+        duration: 200,
+        easing: "easeInExpo"
       })
     }
   },
@@ -127,7 +155,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .no-scroll {
   overflow: hidden;
   position: fixed;
@@ -182,6 +210,8 @@ export default {
     box-sizing: border-box;
 
     .nav-header {
+      font-family: 'Verdana';
+      font-style: italic;
       text-align: center;
       font-size: 1.3rem;
     }
@@ -189,9 +219,11 @@ export default {
       list-style: none;
       padding: 20px 0 30px;
       .nav-item {
-        font-size: 1.5rem;
+        font-family: 'Trebuchet MS';
+        font-size: 1.2rem;
         .nav-link {
-          color: inherit;
+          color: white;
+          transition: transform 0.1s ease-out;
         }
       }
     }
@@ -215,6 +247,11 @@ export default {
     transform: translateY(-6px) rotateZ(135deg);
     background-color: #fff;
   }
+}
+
+.nuxt-link-exact-active, .nuxt-link-exact-active:active {
+  transform: scale(1.2);
+  color: #ffbf3d !important;
 }
 
 .nav-animation-wrapper {
@@ -242,5 +279,23 @@ export default {
   right: -358px;
 }
 
+@media screen and (min-width: 786px){
+  .nav-overlay {
+    .nav-content {
+      .nav-header {
+        font-size: 2rem;
+      }
+      .nav-items {
+      
+        .nav-item {
+          font-size: 1.8rem;
+          .nav-link {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
 
