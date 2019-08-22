@@ -6,6 +6,7 @@
         <img class="img-fluid" src="/images/tupclimb.png" alt="">
       </div>
       <div class="col-12 col-md-8 offset-md-2 case-description">
+        <span class="ex-link"><a href="https://tupclimbing.tw" target="_blank">Actual Site <i class="fas fa-external-link-alt"></i></a></span>
         <h2>Features</h2>
         <ul>
           <li>Course Submission</li>
@@ -38,5 +39,11 @@ export default {
       width: 100%;
       height: 100%;
     }
+  }
+  .ex-link {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 </style>
