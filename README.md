@@ -1,22 +1,10 @@
 # chunjuichen
 
-> website of cjc
+> website of Michael Chen
 
-## Build Setup
+## Framework and Library used in website
 
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+* NuxtJS
+* AnimeJS
+* Animate.css
+* Fontawesome
