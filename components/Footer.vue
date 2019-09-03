@@ -5,9 +5,26 @@
         <a href="https://github.com/g-brodiei" rel="external" target="_blank"><i class="fab fa-github"></i></a>
         <!-- <a href="mailto:&#099;&#104;&#117;&#110;&#106;&#117;&#105;&#099;&#104;&#101;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" rel="external nofollow" target="_blank"><i class="fas fa-envelope"></i></a> -->
       </div>
-      <p class="text-wrapper">@2019 copyright all rights reserved</p>
+      <p class="text-wrapper">&copy;{{currentYear}} copyright all rights reserved</p>
     </footer>
 </template>
+<script>
+export default {
+  data(){
+    return {
+      currentYear: ""
+    }
+  },
+  methods: {
+    findCurrentYear: function(){
+      this.currentYear = new Date().getFullYear();
+    }
+  },
+  mounted(){
+    this.findCurrentYear();
+  }
+}
+</script>
 <style lang="scss" scoped>
   .foot-wrapper {
     display: block;
