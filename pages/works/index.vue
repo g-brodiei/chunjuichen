@@ -41,6 +41,22 @@ export default {
       },
       works: [
         {
+          links: '/works/heartandsoulrescue',
+          imgSource: '/images/heartandsoulrescue-org.png',
+          title: 'HeartandSoulRescue',
+          tooltips: [
+            {
+              iconClass: 'fab fa-bootstrap',
+              title: 'Bootstrap is an open source toolkit for developing with HTML, CSS, and JS'
+            },
+            {
+              iconClass: 'fab fa-wordpress',
+              title: 'WordPress is a content management system (CMS) based on PHP and MySQL that is usually used with the MySQL or MariaDB database servers but can also use the SQLite database engine. Features include a plugin architecture and a template system.'
+            }
+          ],
+          description: 'HeartandSoulRescue is an Australian charity organization focusing on animal rescue.'
+        },
+        {
           links: '/works/tupclimbing',
           imgSource: '/images/tupclimb.png',
           title: 'T-UP Climbing Gym',
