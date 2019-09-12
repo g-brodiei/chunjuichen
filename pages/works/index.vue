@@ -109,7 +109,7 @@ export default {
 
 #works {
   .work-wrapper {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .work-scope {
     .fab {
