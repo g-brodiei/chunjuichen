@@ -4,7 +4,7 @@
 set -e
 
 # build
-yarn generate:gh-pages
+yarn generate --fail-on-error
 
 # navigate into the build output directory
 cd dist
