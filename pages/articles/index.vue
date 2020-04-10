@@ -19,7 +19,7 @@
 export default {
   data() {
     return {
-      links: '/articles/config-split'
+      links: '/articles/config_split'
     }
   }
 }
