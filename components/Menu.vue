@@ -24,12 +24,9 @@
           <li class="nav-item">
             <nuxt-link to="/works" exact class="nav-link">Works</nuxt-link>
           </li>
-          <!-- <li class="nav-item">
-            <nuxt-link to="/gallery" class="nav-link">Gallery</nuxt-link>
-          </li> -->
-          <!-- <li class="nav-item">
-            <nuxt-link to="/contact" class="nav-link">Contact</nuxt-link>
-          </li> -->
+          <li class="nav-item">
+            <nuxt-link to="/articles" exact class="nav-link">Articles</nuxt-link>
+          </li>
         </ul>
       </div>
     </div>

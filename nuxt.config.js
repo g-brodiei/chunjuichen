@@ -6,6 +6,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 export default {
+  ...routerBase,
   mode: 'universal',
   /*
   ** Headers of the page
@@ -28,7 +29,8 @@ export default {
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5'}
     ],
     script: [
-      { src: 'https://kit.fontawesome.com/2751eccbc1.js' }
+      { src: 'https://kit.fontawesome.com/2751eccbc1.js' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js'}
     ]
   },
   /*
@@ -76,6 +78,5 @@ export default {
     */
     extend(config, ctx) {
     }
-  },
-  ...routerBase
+  }
 }
