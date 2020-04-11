@@ -23,15 +23,18 @@ p {
   }
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-
-  li {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    border-bottom: 1.2px solid $kf-pink;
+.articles{
+  ul {
+    list-style: none;
+    padding-left: 0;
+  
+    li {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      border-bottom: 1.2px solid $kf-pink;
+    }
   }
+
 }
 
 

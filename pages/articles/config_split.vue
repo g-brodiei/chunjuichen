@@ -1,7 +1,7 @@
 <template>
   <section class="container articles">
     <div class="row  my-5">
-      <h1 class="text-center">Drupal Site Essentials: "Config Split", Spliting Configurations between dev and stage sites.</h1>
+      <h1 class="text-center col-12 col-md-10 offset-md-1">Drupal Site Essentials: "Config Split", Spliting Configurations between dev and stage sites.</h1>
       <small class="mx-auto">posted: 2020-04-10</small>
     </div>
     <div class="row">
@@ -91,4 +91,16 @@ $config['config_split.config_split.dev_site']['status'] = FALSE;</code></pre>
   </section>
 </template>
 <style lang="scss" scoped>
+  .articles {
+    h1 {
+      font-size: 1.75em;
+        
+      @media screen and (min-width: 768px) {
+        font-size: 1.85em;
+      }
+      @media screen and (min-width: 1200px){
+        font-size: 2em;;
+      }
+    }
+  }
 </style>

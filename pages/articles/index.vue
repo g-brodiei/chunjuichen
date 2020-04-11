@@ -25,5 +25,16 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+  .articles-list {
+    h2 {
+      font-size: 1.5em;
+        
+      @media screen and (min-width: 768px) {
+        font-size: 1.75em;
+      }
+      @media screen and (min-width: 1200px){
+        font-size: 2em;;
+      }
+    }
+  }
 </style>

@@ -172,7 +172,8 @@ export default {
 #navbar {
   justify-content: space-between;
   align-items: center;
-  @media only screen and (min-width: 768px) {
+
+  @media only screen and (min-width: 1200px) {
     margin-left: 5%;
     margin-right: 5%;
   }  
@@ -190,6 +191,7 @@ export default {
     margin-bottom: 0px;
     li {
       padding-right: 15px;
+      transition-duration: 200ms;
     }
   }
 }
@@ -202,10 +204,10 @@ export default {
 }
 
 .menu {
-  position:absolute;
-  top: 2.8vmin;
-  right: 3.3vmin;
-  z-index: 1003;
+  // position:absolute;
+  // top: 2.8vmin;
+  // right: 3.3vmin;
+  // z-index: 1003;
   width: 23px;
   outline: none;
   -webkit-tap-highlight-color: transparent;
