@@ -6,6 +6,22 @@
     <div class="nav-animation-wrapper menu-animation-background">
       <div class="nav-animated-background menu-animated-background"></div>
     </div>
+    <div class="nav-bar">
+      <ul>
+        <li class="">
+          <nuxt-link to="/" exact class="">Home</nuxt-link>
+        </li>
+        <li class="">
+          <nuxt-link to="/about" exact class="">About</nuxt-link>
+        </li>
+        <li class="">
+          <nuxt-link to="/works" exact class="">Works</nuxt-link>
+        </li>
+        <li class="">
+          <nuxt-link to="/articles" exact class="">Articles</nuxt-link>
+        </li>
+      </ul>
+    </div>
     <div v-on:click="menuToggle" class="menu">
       <span class="menu-line-1 menu-hamburger"></span>
       <span class="menu-line-2 menu-hamburger"></span>
@@ -153,6 +169,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#navbar {
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (min-width: 768px) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }  
+}
+
+.nav-bar {
+  display: none;
+  @media only screen and (min-width: 768px) {
+    display:block;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+    margin-bottom: 0px;
+    li {
+      padding-right: 15px;
+    }
+  }
+}
+
 .no-scroll {
   overflow: hidden;
   position: fixed;
@@ -169,6 +210,9 @@ export default {
   outline: none;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
   .menu-hamburger {
     display: block;
     height: 2px;

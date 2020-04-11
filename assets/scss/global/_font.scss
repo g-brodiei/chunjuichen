@@ -4,6 +4,7 @@
 $kf-turquoise: #269e93;
 $kf-darkgreen: #2f846b;
 $kf-yellow: #ffbf3d;
+$kf-pink: #ff49a4;
 
 html {
   font-family: 'Roboto', "Noto Sans TC",Arial, sans-serif-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -15,11 +16,24 @@ h1, h2, h3, h4, h5, h6, p{
 
 p {
   font-size: 1em;
+  word-break: break-word;
 
   @media only screen and (min-width: 786px) {
     font-size: 1.25em;
   }
 }
+
+ul {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-bottom: 1.2px solid $kf-pink;
+  }
+}
+
 
 strong {
   font-size: 1.1em;
@@ -39,4 +53,9 @@ a {
 
 .reminder {
   font-size: 1em;
+}
+
+pre {
+  padding: 3px 5px;
+  background-color: rgba($color: #000000, $alpha: 0.1);
 }

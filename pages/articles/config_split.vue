@@ -50,7 +50,7 @@
           <li><h3>step.6</h3></li>
           <p>Export config, you'll see the selected config files exported into your destination folder.</p>
           <pre><code>drush cex -y</code></pre>
-          <img src="/articles/config-split/folder_structure_1.png" alt="folder structure">
+          <img src="/articles/config-split/folder_structure_1.png" alt="folder structure" class="img-fluid">
           <li>
             <h3>step.7</h3>
           </li>
@@ -78,7 +78,7 @@ $config['config_split.config_split.dev_site']['status'] = TRUE;</code></pre>
 $config['config_split.config_split.dev_site']['status'] = FALSE;</code></pre>
           <pre><code>//clear cache
   drush cr</code></pre>
-          <img src="/articles/config-split/config_override.png" alt="config overriding">
+          <img src="/articles/config-split/config_override.png" alt="config overriding" class="img-fluid">
           <li><h3>step.11</h3></li>
           <p>Clear cache and run import config to let the magic happen!</p>
           <pre><code>drush cim -y</code></pre>
