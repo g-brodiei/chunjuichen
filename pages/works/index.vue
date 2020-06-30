@@ -41,6 +41,22 @@ export default {
       },
       works: [
         {
+          links: '/works/heartfailure',
+          imgSource: '/images/heartfailure.png',
+          title: 'Heart Failure Careness Consulting Platform',
+          tooltips: [
+            {
+              iconClass: 'fab fa-bootstrap',
+              title: 'Bootstrap is an open source toolkit for developing with HTML, CSS, and JS'
+            },
+            {
+              iconClass: 'fab fa-drupal',
+              title: 'Drupal 8, Drupal is a free and open-source content management framework written in PHP and distributed under the GNU General Public License'
+            }
+          ],
+          description: 'Heart Failure Careness Consulting Platform is based in Taiwan, aiming to provide a professional trustworthy platform to allow medical professionals to discuss on pratice issues and potential patients to consult common questions.'
+        },
+        {
           links: '/works/heartandsoulrescue',
           imgSource: '/images/heartandsoulrescue-org.png',
           title: 'HeartandSoulRescue',
